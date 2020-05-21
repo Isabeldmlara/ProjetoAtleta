@@ -49,7 +49,7 @@ namespace ProjetoAtleta
             {
                 if (value != 0)
                 {
-                    this.altura = value;
+                    this.peso = value;
                 }
                 else
                 {
@@ -64,7 +64,7 @@ namespace ProjetoAtleta
             {
                 if (value != 0)
                 {
-                    this.altura = value;
+                    this.idade = value;
                 }
                 else
                 {

@@ -16,5 +16,30 @@ namespace ProjetoAtleta
         {
             InitializeComponent();
         }
+
+        Atleta Isabel = new Atleta();
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnIMC_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Isabel.Altura = double.Parse(txtaltura.Text);
+                Isabel.Peso = double.Parse(txtpeso.Text);
+                lblresultado.Text = Isabel.CalcularIMC().ToString();
+            }
+            catch (FormatException ex)
+            {
+                MessageBox.Show("Erro. \n" + ex.Message);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
